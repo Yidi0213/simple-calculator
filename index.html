@@ -15,7 +15,7 @@
     </form> 
 
     <button onclick="calculate(add)">Add</button>
-    <!--TODO: add other buttons for subtract, multiply and divide-->
+    <!--TODO: add buttons for subtract, multiply and divide-->
     
     <p>Result: </p><p id = "res">0</p>
     
@@ -31,6 +31,8 @@
             num2_string = document.getElementById('num2').value;
             num1 = parseFloat(num1_string);
             num2 = parseFloat(num2_string);
+            //TODO: check if num1 and num2 are numbers
+
             //use operatioon too calculate the result
             document.getElementById("res").innerHTML = operation(num1,num2);
         }
